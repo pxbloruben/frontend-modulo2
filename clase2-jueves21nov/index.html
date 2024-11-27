@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Box model y display</title>
+</head>
+<body>
+    <header>
+        <h1>Explorando el box model y el display</h1>
+        <p>El box model define el tamaño y la posición de los elementos</p>
+    
+    </header>
+    <main>
+        <!-- secciones de pagina -->
+         <section>
+            <h2>El display de bloque</h2>
+            <p>los elementos con display de bloque tienen un ancho y un alto definidos y empiezan una nueva linea</p>
+         
+         <div class="box">
+                soy un elemento de bloque
+         </div>
+         <div class="box block">
+                soy un elemento de bloque
+         </div>
+         </section>
+         <!-- elementos display:iline -->
+          <section>
+            <h2>Display:Inline</h2>
+            <p>Los elementos con display:inline solo ocupan el ancho necesario y no aceptan propiedades
+                de tamaño como width y height
+            </p>
+i            <!-- los espacio entre clase indica que estas utilizando más de una clase, si hay "-" quiere decir que es una clase completa -->
+            <span class="box inline" >
+                Soy inline
+            </span>
+            <span class="box inline">
+                soy otro inline
+            </span>
+
+          </section>
+            <!--  -->
+          <section>
+            <h2>Display:Inline-Block</h2>
+            <p>Los elementos con display: Inline combinan las caracteristicas de inline (no rompen linea) con block (aceptan width y height)
+            </p>
+            <!-- los espacio entre clase indica que estas utilizando más de una clase, si hay "-" quiere decir que es una clase completa -->
+            <span class="box inline-block" >
+                Soy inline
+            </span>
+            <span class="box inline-block">
+                soy otro inline
+            </span>
+          </section>
+
+          <section>
+            <h2>El box model en acción</h2>
+            <p>El box model afecta el espacio y diseño de cada elemento segun su display</p>
+            <div>
+                <h3>Display:Block</h3>
+                <p>Cada elemento de tipo block ocupa el ancho completo y se apmplia uno de bajo del otro </p>
+                <p>El padding, border y margin funciona como se espera</p>
+                <div class="box block model1">
+                    <P>Bloque 1</P>
+                </div>
+                <div class="box block model1">
+                    <p>Bloque 2</p>
+                </div>
+            </div>
+
+            <div>
+                <h3>Display:Inline</h3>
+
+                <p>Los elementos inline se alienan horizontalmente como text</p>
+                <p>El margin horizontal (izq y derecha) funiona pero el vertical (arriba y abajo) no funciona y no afecta el flujo 
+                    del documento. Es decir se ignoran estas propiedades
+                </p>
+                 <span class="box inline model1">
+                    inline 1
+                 </span>
+                 
+                 <span class="box inline model1">
+                    inline 2
+                 </span>
+            </div>
+
+            <div>
+                <h3>Display:Inline-Block</h3>
+
+                <p>Los elementos inline-block se alinean horizontalmente como inline pero permiten usar
+                    widht, padding, border y margin com olos elementos de display block-</p>
+                
+                 <span class="box inline-block model1">
+                    inline block 1
+                 </span>
+                 
+                 <span class="box inline-block model1">
+                    inline block 2
+                 </span>
+            </div>
+          </section>
+
+          <section>
+            <h2>Box-sizing: Content-Box vs Border-Box</h2>
+            <p>La propiedad box-sizing define como se calcula el ancho y el altro del elemento</p>
+          </section>
+
+          
+
+    </main>
+    <footer>
+        2024 Pablo Gallo. Todos los derechos reservados
+    </footer>
+</body>
+</html>

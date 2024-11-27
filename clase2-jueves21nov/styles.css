@@ -1,0 +1,94 @@
+/* reset basico de pagina*/
+/*las variables de css son valores definidos maediante la 
+sintesis de*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: azure;
+    color: black;
+    line-height: 1.8;
+}
+header {
+    background-color: rgb(96, 212, 212);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    /*los valores para la propiedad son tres sepadados cada uno po run espacio:display: 
+    el primero es el gorsor del borde 
+    el segundo es el */
+    border: 3px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+    text-align: left;
+}
+h2 {
+    color: rgb(96, 212, 212);
+}
+
+.box {
+    background-color: #e3f2fd;
+    border: 1px solid #007BFF;
+    margin: 10px auto;
+    /* el valor auto en la propiedad de margin hace que el navegador calcule
+    automaticamente el espacio para centrar un elemento dentro su contenedor base
+    siempre que el elemento tenga un ancho definido
+    el auto solo aplica para ajustar elementos de manera horizontal*/
+
+    padding: 8px;
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 150px;
+    height: 30px;
+}
+
+.inline {
+    display: inline;
+    width: 150px;
+    height: 30px;
+    /*widht y height son ignorados porque los elementos inline no respetan esta propiedad*/
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    /*widht y height son ignorados porque los elementos inline no respetan esta propiedad*/
+}
+
+.model1{
+    padding: 20px;
+    border: 10px solid #007BFF;
+    margin: 20px;
+}
+
+.content-box{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #007BFF;
+    background-color: #ddd;
+    width: 200px;
+}
+
+.content-box{
+    box-sizing: content-box;
+    margin: 10px;
+    padding: 20px;
+    border: 10px solid #007BFF;
+    background-color: #ddd;
+    width: 200px;
+}
+
+
+
+
